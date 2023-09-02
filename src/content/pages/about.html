@@ -1,0 +1,55 @@
+---
+title: 'About Us | My Closet Guys | Waldorf, MD'
+description: "My Closet Guys is a locally owned and operated custom storage and organization business founded by owner John Katz. We are located in Waldorf, MD, and have over 40 years of industry experience. We take pride in our attention to detail as customer satisfaction is our top priority. Our team of skilled designers"
+preloadImg: '/assets/images/picture10-m.webp'
+permalink: '/about'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/about.css" />
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">About Us</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/picture10-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/picture10.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/picture10.jpg" alt="cabinets" width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   About                      -->
+<!-- ============================================ -->
+
+<section id="sidebyside" class="sidebyside">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">Quality You Can Trust From Decades of Experience</h2>
+                <p>
+                My Closet Guys is a locally owned and operated custom storage and organization business founded by owner John Katz. We are located in Waldorf, MD, and have over 40 years of industry experience. We take pride in our attention to detail as customer satisfaction is our top priority. Our team of skilled designers have a commitment to excellence as we provide premiere customization service as your design consultant, professional organizer, and project manager.
+                </p>
+                <p>
+                We listen attentively to your wants and needs for space and organization and then design a solution that will optimize your storage space, decrease clutter, and improve the look and feel of your room! Rather if you need a custom closet, mudroom, office trailer, or kitchen island built, we have the capabilities and expertise to turn your ideal space into reality. 
+                </p>
+                <p>
+                We create beautifully designed walk-in, grab-in, and utility closet organization systems to help organize your wardrobe and life. Select distinctive hanging rods, lights, fixtures, mirrors, shoe trays, accessories, or hardware options to truly create a personalized closet that you love!
+                </p>
+                <a class="button-solid" href="/contact">Get Free Quote</a>
+        </div>
+        <picture class="image-box">
+                <source media="(max-width: 600px)" srcset="/assets/images/picture12-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/picture12.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/picture12.jpg" alt="cabinets" width="400" height="662">
+            </picture>
+    </div>
+</section>
+{% include 'components/cta.html' %}
+{% endblock %}

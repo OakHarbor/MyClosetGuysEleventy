@@ -1,0 +1,260 @@
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<div id="navigation">
+    <div aria-hidden="true" class="background-color-div">
+        <!--This div is used to overcome a z-index issue where the open
+            #navbar-menu is on top of the #navigation. This bar places itself 
+            the #navbar-menu so that menu appears behind the #navigation
+        -->
+    </div>
+    <div class="container">
+        <!--Logo - Get SVGs if you can.  I use fiverr to get png's turned into SVGs. Highly recommend it, worth the $20 - get a light and dark version-->
+        <a class="logo" aria-label="click to go to home page" href="/">
+            <!--Light Colored Logo, remove .dark image tag and the .light class if you don't have a dark and light version -->
+            <img class="light" aria-hidden="true" src="/assets/images/logo.svg" decoding="async" alt="logo" width="221" height="66">
+
+            <!--Dark Colored Logo-->
+            <img class="dark" aria-hidden="true" src="/assets/images/logo-white.svg" decoding="async" loading="lazy" alt="logo" width="221" height="66">
+        </a>
+
+        <!--Main Nav-->
+        <nav id="navbar-menu">
+            <ul>
+                <li><a class="nav-link {{ 'cs-active' if '' == page.fileSlug }}" href="/">Home</a></li>
+                <li><a class="nav-link {{ 'cs-active' if 'about' == page.fileSlug }}" href="/about">About Us</a></li>
+                <li><a class="nav-link {{ 'cs-active' if 'projects' == page.fileSlug }}" href="/projects">Projects</a></li>
+                <li><a class="nav-link {{ 'cs-active' if 'reviews' == page.fileSlug }}" href="/testimonials">Reviews</a></li>
+                <li><a class="nav-link {{ 'cs-active' if 'financing' == page.fileSlug }}" href="/financing">Financing</a></li>
+                <li class="nav-link cs-li cs-dropdown">
+                    <span class="cs-li-link nav-link
+                    {{ 'cs-active' if 'annapolis-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'bowie-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'severna-park-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'odenton-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'crofton-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'washington-dc-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'arlington-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'northern-va-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'maryland-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'alexandria-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'mclean-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'silver-spring-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'fort-washington-md-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'germantown-md-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'rockville-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'wheaton-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'wicomico-county-custom-closets' == page.fileSlug }}
+                    ">
+                        Areas Served
+                        <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                    </span>
+                    <ul class="cs-drop-ul">
+                        <li class="cs-drop-li">
+                            <a href="/annapolis-custom-closets" class="cs-drop-link">Annapolis</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/bowie-custom-closets" class="cs-drop-link">Bowie</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/severna-park-custom-closets" class="cs-drop-link">Severna Park</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/odenton-custom-closets" class="cs-drop-link">Odenton</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/crofton-custom-closets" class="cs-drop-link">Crofton</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/washington-dc-custom-closets" class="cs-drop-link">Washington DC</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/arlington-custom-closets" class="cs-drop-link">Arlington</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/northern-va-custom-closets" class="cs-drop-link">Northern VA</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/maryland-custom-closets" class="cs-drop-link">Maryland</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/alexandria-custom-closets" class="cs-drop-link">Alexandria</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/mclean-custom-closets" class="cs-drop-link">McLean, VA</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/silver-spring-custom-closets" class="cs-drop-link">Silver Springs, MD</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/fort-washington-md-custom-closets" class="cs-drop-link">Fort Washington, MD</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/germantown-md-custom-closets" class="cs-drop-link">Germantown, MD</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/rockville-custom-closets" class="cs-drop-link">Rockville, MD</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/wheaton-custom-closets" class="cs-drop-link">Wheaton, MD</a>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/wicomico-county-custom-closets" class="cs-drop-link">Wicomico County, MD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-link cs-li cs-dropdown">
+                    <span class="cs-li-link nav-link
+                    {{ 'cs-active' if 'maryland-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'washington-dc-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'northern-va-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'annapolis-custom-closets' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-bars' == page.fileSlug }}
+                    {{ 'cs-active' if 'maryland-custom-garage-storage' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-garage-storage-nova-dc' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-pantry-maryland' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-pantry-nova-dc' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-laundry-room-maryland' == page.fileSlug }}
+                    {{ 'cs-active' if 'custom-laundry-room-nova-dc' == page.fileSlug }}
+                    {{ 'cs-active' if 'home-library-maryland' == page.fileSlug }}
+                    {{ 'cs-active' if 'home-library-nova-dc' == page.fileSlug }}
+                    {{ 'cs-active' if 'maryland-wine-storage' == page.fileSlug }}
+                    {{ 'cs-active' if 'nova-wine-storage' == page.fileSlug }}
+                    {{ 'cs-active' if 'washington-wine-storage' == page.fileSlug }}
+                    {{ 'cs-active' if 'maryland-custom-home-offices' == page.fileSlug }}
+                    {{ 'cs-active' if 'nova-dc-custom-home-offices' == page.fileSlug }}
+                    ">
+                        Services
+                        <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                    </span>
+                    <ul class="cs-services">
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Custom Closets</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/maryland-custom-closets" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/washington-dc-custom-closets" class="cs-tertiary-link">Washington DC</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/northern-va-custom-closets" class="cs-tertiary-link">Northern Virginia</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/annapolis-custom-closets" class="cs-tertiary-link">Annapolis</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li">
+                            <a href="/custom-bars" class="cs-drop-link">Custom Bars</a>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Garage Storage</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/maryland-custom-garage-storage" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/custom-garage-storage-nova-dc" class="cs-tertiary-link">Nova + DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Pantry</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/custom-pantry-maryland" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/custom-pantry-nova-dc" class="cs-tertiary-link">Nova + DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Laundry Room Systems</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/custom-laundry-room-maryland" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/custom-laundry-room-nova-dc" class="cs-tertiary-link">Nova + DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Home Libraries</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/home-library-maryland" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/home-library-nova-dc" class="cs-tertiary-link">Nova + DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Wine Racks</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/maryland-wine-storage" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/nova-wine-storage" class="cs-tertiary-link">Northern Virginia</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/washington-wine-storage" class="cs-tertiary-link">Washington DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-drop-li cs-tertiary">
+                            <span class="cs-tertiary-link">
+                                <span class="cs-click">Home Offices</span>
+                                    <img class="cs-drop-icon" src="/assets/images/down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                </span>
+                            <ul class="cs-tertiary-ul">
+                                <li class="cs-tertiary-li">
+                                    <a href="/maryland-custom-home-offices" class=" cs-tertiary-link">Maryland</a>
+                                </li>
+                                <li class="cs-tertiary-li">
+                                    <a href="/nova-dc-custom-home-offices" class="cs-tertiary-link">Nova + DC</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="button-solid" href="/contact">Free Consultation</a></li>
+            </ul>
+        </nav>
+
+        <!--Dark Mode toggle-->
+        <button id="dark-mode-toggle" aria-label="dark mdoe toggle">
+            <!--Moon is an inline SVG so you can edit the color if needed-->
+            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+            <img class="sun" aria-hidden="true" src="/assets/images/sun.svg" decoding="async" alt="moon" width="15" height="15">
+        </button>
+
+        <!--Mobile Nav toggle-->
+        <button class="hamburger-menu" aria-label="toggle mobile nav">
+            <span aria-hidden="true"></span>
+        </button>
+    </div>
+</div>

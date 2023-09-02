@@ -1,0 +1,36 @@
+---
+title: 'Financing | My Closet Guys'
+description: "We strive to provide excellent customer service and quality for all custom designs and projects. Come check out what our customers have to say about us! What Our Happy Clients Say See how our storage and organization space solutions have helped our customers! So incredibly happy with our new closet! My closet guys were"
+preloadImg: '/assets/images/picture7-m.webp'
+permalink: '/financing'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/reviews.css" />
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Financing</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/picture7-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/picture7.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/picture7.jpg" alt="closet shelving" width="400" height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<div id="fullpagewidget" data-color1="#68BA62" data-color2="#1C418C" data-coBrandedColor="#FFFFFF" data-page="9918790"></div>
+{% include 'components/cta.html' %}
+
+<script src="https://www.enhancify.com/fullpagewidget/"></script>
+{% endblock %}

@@ -1,0 +1,442 @@
+---
+title: 'Get Organized with My Closet Guys! | Waldorf, MD'
+description: 'Get organized with My Closet Guys! Our professional storage designers will create a functional and stylish closet or storage unit that works for your needs.'
+preloadImg: '/assets/images/landing-m.webp'
+permalink: '/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/local.css" />
+    <link rel="stylesheet" href="/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="hero">
+    <div class="hero-content">
+        <div class="heroText">
+            <h1 id="home-h">Custom Built Closet System Experts</h1>
+            <p>
+                We are known throughout Southern Maryland and Northern Virginia as the premiere organization and storage space experts. Here at My Closet Guys, we provide custom closet, organization, and storage space solutions for home and commercial use. 
+            </p>
+            <div class="buttons">
+                <a class="button-solid" href="/contact" >
+                    Free Consultation
+                </a>
+                <a class="button-transparent" href="/financing">
+                    Get Financing
+                </a>
+            </div>
+        </div>
+    </div>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="appliance" width="275" height="132">
+        </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/service1.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/service1-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Custom Closet Systems</h2>
+        <p>
+            We create beautifully designed walk-in, grab-in, and utility closet organization systems to help organize your wardrobe and life.
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/service2.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/service2-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Custom Pantries</h2>
+        <p>
+            Choose from an assortment of shelving, drawers, cubby spaces, and other elements to create your ideal customized pantry.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" decoding="async" src="/assets/images/service3.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" decoding="async" src="/assets/images/service3-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h2>Laundry & Mud rooms</h2>
+        <p>
+            Add more space to your laundry room or mud room with custom shelving and storage space designed specifically for your space.
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   About                      -->
+<!-- ============================================ -->
+
+<section id="about" class="sidebyside-about">
+    <div class="left">
+        <h2 class="title">Experienced Closet & Storage Fabrication For Waldorf MD</h2>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/family.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/family.jpg">
+            <img class="left-img" loading="lazy" decoding="async" src="/assets/images/family.jpg" alt="house in the mountains" width="611" height="380">
+            </picture>
+            <p>
+            We are a small business with extra-large talent. We work with real estate agents, homeowners, designers, government agencies, and commercial clients to create home organizational systems and storage accessories. 
+            </p>
+            <p>
+            From our no-obligation FREE in-home design consultation to our unique custom designs, we promise to deliver superior service and the best value at a price that beats the competition! Our team designs and builds all of our customized projects in-house which allows us to pass on the cost savings to you! 
+            </p>
+            <a href="/about" class="button-solid">More About Us</a>
+    </div>
+    <picture class="right">
+        <source media="(max-width: 600px)" srcset="/assets/images/about2-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/about2.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/about2.jpg" alt="custom high end closet shelving" width="693" height="976">
+        </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="steps" class="standard">
+    <h2 class="title">Our Custom Closet Process From Start to Finish
+    </h2>
+    <p>
+        We Specialize In The Management And Interior Design Of Custom Storage And Organization Systems And Units
+    </p>
+    <div class="reviews-box">
+        <div class="card">
+            <span class="name">In-Home Consultation</span>
+            <p>
+                We begin our process with a FREE in-home design consultation. We then take measurements of your space, a note of your needs, overall goals, and preferred design style.
+            </p>
+        </div>
+        <div class="card">
+            <span class="name">Customized Design</span>
+            <p>
+                During this stage, our team will create a custom 3D design for your space. Once approved, we will then discuss the timeframe for the project, associated costs, and our lifetime warranty.
+            </p>
+        </div>
+        <div class="card">
+            <span class="name">Project Creation</span>
+            <p>
+                We turn your idea into a reality with our state of the art machinery making every cut precise for perfect fits.
+            </p>
+        </div>
+        <div class="card">
+            <span class="name">Installation</span>
+            <p>
+                We schedule a time for our team to come to your home and install your custom piece into your home.
+            </p>
+        </div>
+    </div>
+    <a href="/contact" class="button-solid">Get Free Consultation</a>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="closet storage" width="275" height="132">
+        </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Any Room                   -->
+<!-- ============================================ -->
+
+<section id="sidebyside" class="sidebyside">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">Any Room, Any Space. We Build It All For Waldorf, MD.</h2>
+                <p>
+                We provide innovative and creative designs that will optimize your storage, clutter, and difficult spaces. We create custom organization solutions for every lifestyle and design aesthetic that will fit your budget.
+                </p>
+                <p class="bold">
+                    <strong>Other custom storage solutions:</strong>
+                </p>
+                <ul>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Cabinet Storage Solutions</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Kitchen Islands</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Fireplace Mantels</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Benches & Cusotm Bars</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Wine Storage Cellars</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Garage Storage & Mudrooms</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Business & Home Office Storage</span>
+                </li>
+                <li>
+                    <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="check mark" width="20" height="20">
+                    <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-dark.svg" alt="check mark" width="20" height="20">
+                    <span>Closets (Walk in & Reach In)</span>
+                </li>
+            </ul>
+                <p>
+                Once your initial design is complete, we work together with you to truly personalize your project. You select the color, material, and accessories that best reflect your style. Decorate drawer faces, incorporate doors, add moldings, trims, shelving, and cabinets; the possibilities are endless! Feel free to be as creative and specific to create your ideal space just as unique as you are.
+                </p>
+                <a class="button-solid" href="/contact">Contact Us</a>
+        </div>
+        <picture class="image-box">
+                <source media="(max-width: 600px)" srcset="/assets/images/port7-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port7.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/port7.jpg" alt="cabinets" width="400" height="662">
+            </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Extra Content For Ranking           -->
+<!-- ============================================ -->
+
+<section id="sidebyside-reverse">
+    <div class="container">
+        <div class="content">
+            <h2 class="title">We Build More Than Just Closet Storage</h2>
+            <p class="bold">
+                <strong>Custom Cabinetry</strong>
+            </p>
+            <p>
+                We specialize in custom-built cabinetry that will completely transform your room and optimally utilize the space in your home or office. You have the option to include add-ons such as pullout organizers, trash pullouts, tiered organizers, or whatever elements you can think of!
+            </p>
+            <p class="bold">
+                <strong>Custom Office Space</strong>
+            </p>
+            <p>
+                We create custom office spaces that suit your business needs. If you’re working from home and need a small functional organized space for a home office, or if you need an entire room designed to increase workflow, we have a design that will suit your needs. You can choose from a myriad of options such as cabinets, cubbies, dividers, LED lighting, drawers and countertops to create a space tailored to your needs.
+            </p>
+            <p class="bold">
+                <strong>Custom Kitchen Pantires</strong>
+                </p>
+                <p>
+                We create custom pantries that will make storing, organizing, cooking, and cleaning easier! We will work with you to create the ideal space for all of your canned goods, paper goods, small electronics, and other items that will declutter your kitchen and make meal prep more enjoyable. Choose from an assortment of shelving, drawers, cubby spaces, and other elements to create your ideal customized pantry.
+                </p>
+                <a class="button-solid" href="/contact">Get Free Quote</a>
+        </div>
+        <picture class="image-box">
+                <source media="(max-width: 600px)" srcset="/assets/images/innovate1-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/innovate1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/innovate1.jpg" alt="machinery" width="400" height="662">
+            </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                     Why                      -->
+<!-- ============================================ -->
+
+<section id="why" class="services">
+    <h2 class="title">Why Choose My Closet Guys <span>For Your Home?</span></h2>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why2.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why2-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h3>competitive Pricing</h3>
+        <p>
+            We design and build everything in-house saving on overhead which allows us to save you money.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why1.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why1-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h3>40 Years Experience</h3>
+        <p>
+            We’ve worked with thousands of people and the have more than 40 years of experience in the industry.
+        </p>
+    </div>
+    <div class="card">
+        <picture>
+            <img class="light" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why3.svg" alt="icon" width="48" height="48">
+            <img class="dark" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/why3-dark.svg" alt="icon" width="48" height="48">
+        </picture>
+        <h3>Quick response times</h3>
+        <p>
+            We  have a quick response times to all inquiries and provide excellent customer service from start to finish.
+        </p>
+    </div>
+    <a href="/financing" class="button-solid">Get Financing</a>
+</section>
+
+<!-- ============================================ -->
+<!--                  Portfolio                   -->
+<!-- ============================================ -->
+
+<section id="portfolio">
+    <h2 class="title">Our Portfolio</h2>
+    <div class="container">
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port1-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port1.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port1.jpg" alt="new hallway" width="420" height="567">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port4-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port4.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port4.jpg" alt="new home construction" width="420" height="630">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port7-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port7.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port7.jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+        </div>
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port2-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port2.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port2.jpg" alt="new kitchen" width="420" height="492">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port5-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port5.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port5.jpg" alt="apartment addition" width="420" height="517">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port8-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port8.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+        </div>
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port3-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port3.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port3.jpg" alt="new black window structure" width="420" height="625">
+                </picture>
+                
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port6-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port6.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port6.jpg" alt="kitchen rebovation" width="420" height="452">
+                </picture>
+                
+                
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port9-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port9.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port9.jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+        </div>
+    </div>
+    <a href="/projects" class="button-solid">View Full Portfolio</a>
+</section>
+
+<!-- ============================================ -->
+<!--                   Stats                      -->
+<!-- ============================================ -->
+
+<!-- <div id="stats">
+    <div><style>@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700;900&display=swap');</style><script src="https://cp.enhancify.com/api/v1/upload/widgets/payment-calculator.js"></script><script>(function(){new PaymentCalculator({ coBrandedUrl: 'https://www.enhancify.com/universal-windows-direct-of-athens?utm_source=widget-payment-calculator', container: document.currentScript.parentNode}).init();})()</script></div>
+</div> -->
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews">
+    <h2 class="title">What People Say About Us</h2>
+    <div class="container">
+        <div class="review">
+            <picture>
+                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
+                </picture>
+                <p>
+                So incredibly happy with our new closet! My closet guys were very professional, quick and so very helpful! They gave us their recommendations which were extremely helpful. Thank you guys for the amazing work! Will def be using you again in the future!
+                </p>
+                <div class="star-group">
+                <span class="name">Christie George<span class="desc">Homeowner</span></span>
+                    <picture>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+        </div>
+        <div class="review">
+            <picture>
+                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile.svg" alt="profile image" width="99" height="99">
+                </picture>
+                <p>
+                The team at My Closet Guys are fantastic! They’re orderly and responsive to my calls, and extremely knowledgeable about the subjects I had questions about. If you need a custom organization for one of your rooms, you can’t go wrong with these guys!
+                </p>
+                <div class="star-group">
+                <span class="name">MDB<span class="desc">Company Owner</span></span>
+                    <picture>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+        </div>
+        <div class="review">
+            <picture>
+                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
+                </picture>
+                <p>
+                I love love my closet! It can hold all my thousands of clothes and I don’t ever have to worry about it fallen. I would definitely recommend that if you are in search of a custom closet don’t hesitate to contact My Closet Guys. They are the best!
+                </p>
+                <div class="star-group">
+                    <span class="name">Chantell Duckett<span class="desc">Homeowner</span></span>
+                    <picture>
+                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+        </div>
+    </div>
+    <a class="button-solid" href="/testimonials">Read More Reviews</a>
+</section>
+
+{% include 'components/cta.html' %}
+{% endblock %}

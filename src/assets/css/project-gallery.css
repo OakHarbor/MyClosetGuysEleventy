@@ -1,0 +1,213 @@
+/*-- -------------------------- -->
+<---         Portfolio          -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #portfolio {
+    padding-top: 3.75em;
+    padding-bottom: 5.25em;
+    position: relative;
+    z-index: 5;
+  }
+  #portfolio .container {
+    width: 96%;
+    max-width: 66.1em;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    font-size: min(1.3vw, 1em);
+  }
+  #portfolio .container .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5em;
+  }
+  #portfolio .container .row:nth-of-type(1) picture.one {
+    width: 21em;
+    height: 28.35em;
+  }
+  #portfolio .container .row:nth-of-type(1) picture.two {
+    width: 21em;
+    height: 31.45em;
+  }
+  #portfolio .container .row:nth-of-type(1) picture.three {
+    width: 21em;
+    height: 25.6em;
+  }
+  #portfolio .container .row:nth-of-type(2) picture.one {
+    width: 21em;
+    height: 24.6em;
+  }
+  #portfolio .container .row:nth-of-type(2) picture.two {
+    width: 21em;
+    height: 25.85em;
+  }
+  #portfolio .container .row:nth-of-type(2) picture.three {
+    width: 21em;
+    height: 31.45em;
+  }
+  #portfolio .container .row:nth-of-type(3) picture.one {
+    width: 21em;
+    height: 31.25em;
+  }
+  #portfolio .container .row:nth-of-type(3) picture.two {
+    width: 21em;
+    height: 22.6em;
+  }
+  #portfolio .container .row:nth-of-type(3) picture.three {
+    width: 21em;
+    height: 31.45em;
+  }
+  #portfolio .container .row picture {
+    position: relative;
+    display: block;
+  }
+  #portfolio .container .row picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #portfolio {
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #portfolio {
+    background: var(--medium);
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125em 0;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3em);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 0.75em;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 96%;
+    max-width: 33.22222222em;
+  }
+  #cta .button-solid {
+    background-color: #fff;
+    color: var(--primary);
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5em 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25em;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25em;
+    width: 125em;
+    background: url("../images/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
