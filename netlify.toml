@@ -6,6 +6,3 @@
   # Installs the Lighthouse Build Plugin for all deploy contexts
   package = "@netlify/plugin-lighthouse"
 
-[build.processing.html]
-  pretty_urls = false
-
