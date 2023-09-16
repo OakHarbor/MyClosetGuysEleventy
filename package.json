@@ -10,7 +10,7 @@
 		"watch:less": "less-watch-compiler ./src/assets/less ./public/css",
 		"watch:cms": "npx netlify-cms-proxy-server",
 		"start": "del-cli ./public --force && npm-run-all --parallel watch:*",
-		"build": "npm-run-all --parallel build:*"
+		"build": "less-watch-compiler --run-once ./src/assets/less ./public/css && eleventy"
 	},
 	"repository": {
 		"type": "git",
