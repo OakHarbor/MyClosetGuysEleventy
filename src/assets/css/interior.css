@@ -8,6 +8,7 @@
   }
   #content-page {
     padding: var(--sectionPadding);
+    padding-top: clamp(7rem, 12vw, 12rem);
     background-color: #fff;
     /* clips the wave background from causing overflow issues when it goes off screen */
     overflow: hidden;
@@ -73,6 +74,9 @@
   #content-page .cs-color {
     color: var(--primary);
   }
+  #content-page .button-solid {
+    margin: 1rem 0 2rem;
+  }
   #content-page p {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
@@ -84,7 +88,7 @@
   #content-page p:last-of-type {
     margin-bottom: 2rem;
   }
-  #content-page a {
+  #content-page p a {
     font-size: inherit;
     line-height: inherit;
     text-decoration: underline;
