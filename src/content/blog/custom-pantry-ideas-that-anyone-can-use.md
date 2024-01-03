@@ -23,6 +23,8 @@ Whether you're storing tall cereal boxes or small spice jars, adjustable shelves
 
 ![adjustable shelves and custom pantry ideas](/assets/images/blog/slat-wall-min.png)
 
+Image source: www.lifewithlessmess.com/
+
 ### Pull-Out Baskets and Bins
 
 Maximizing the use of vertical space can make your pantry more efficient. Consider installing pull-out baskets and bins that can be easily accessed, even if they're placed on higher shelves. These custom pantry additions are ideal for storing snacks, vegetables, or even baking supplies. A skilled contractor can install flat pull-out shelving, enclosed pullout boxes, and even include quiet-close hardware so that your shelves don’t slam shut when you push them.
