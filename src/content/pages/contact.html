@@ -8,34 +8,38 @@ permalink: 'contact/'
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/contact.css"/>
 {% endblock %}
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                    LANDING                   -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 
-<section id="int-hero">
-    <h1 id="home-h">Request Free Design & Quote</h1>
-    <a href="tel:240-823-7401" class="button-solid">Call Now</a>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/picture4-m.webp">
-        <source media="(min-width: 601px)" srcset="/assets/images/picture4.jpg">
-        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/picture4.jpg" alt="closet shelves" width="400" height="662">
-    </picture>
-</section>
+    <section id="int-hero">
+        <h1 id="home-h">Request Free Design & Quote</h1>
+        <a href="tel:240-823-7401" class="button-solid">Call Now</a>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/picture4-m.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/picture4.jpg">
+            <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/picture4.jpg" alt="closet shelves" width="400" height="662">
+        </picture>
+    </section>
 
-<!-- ============================================ -->
-<!--                    FORM                      -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    FORM                      -->
+    <!-- ============================================ -->
 
-<section id="form">
-    <div class="left-section">
-        <h2 class="title">Price Match Guarantee*</h2>
-        <p>*Some restrictions applied</p>
-        <form id="contact" name="Contact Form2" method="post" data-netlify="true">
+    <section id="form">
+        <div class="left-section">
+            <h2 class="title">Price Match Guarantee*</h2>
+            <p>*Some restrictions applied</p>
+
+            <form id="contact" name="Contact Form2" data-netlify="true" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000003TMt1" method="POST">
+                <input type=hidden name="oid" value="00D5e000003TMt1">
+                <input type=hidden name="retURL" value="http://">
+
                 <div class="input-group">
                     <label for="name">Full Name</label>
                     <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" tabindex="1" required>
@@ -99,7 +103,7 @@ permalink: 'contact/'
                     </div>
                 </div>
                 <div id="select" class="input-group width100">
-                    <label for="how">Best time to call?</label> 
+                    <label for="how">Best time to call?</label>
                     <select id="cars" name="when best to call">
                         <option value="morning">Morning</option>
                         <option value="afternoon">Afternoon</option>
@@ -111,69 +115,69 @@ permalink: 'contact/'
                     <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us what you need help with" required></textarea>
                     <div aria-hidden="true" class="hover-box"></div>
                 </div>
-            <p class="form-submit">
-                <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
-            </p>
-        </form>
-    </div>
-    <div class="contact-right">
-        <div class="info-group">
-            <span class="heading">Location</span>
-            <span class="info">Waldorf, MD</span>
+                <p class="form-submit">
+                    <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
+                </p>
+            </form>
         </div>
-        <div class="info-group">
-            <span class="heading">Phone</span>
-            <a class="info" href="tel:240-823-7401">(240) 823-7401</a>
+        <div class="contact-right">
+            <div class="info-group">
+                <span class="heading">Location</span>
+                <span class="info">Waldorf, MD</span>
+            </div>
+            <div class="info-group">
+                <span class="heading">Phone</span>
+                <a class="info" href="tel:240-823-7401">(240) 823-7401</a>
+            </div>
+            <div class="info-group">
+                <span class="heading">Email</span>
+                <a class="info" href="mailto:myclosetguysllc@gmail.com">Click to Email</a>
+            </div>
+            <div class="info-group">
+                <span class="heading">Hours</span>
+                <span class="info last">Mon to Fri: 8am to 6pm</span>
+            </div>
         </div>
-        <div class="info-group">
-            <span class="heading">Email</span>
-            <a class="info" href="mailto:myclosetguysllc@gmail.com">Click to Email</a>
-        </div>
-        <div class="info-group">
-            <span class="heading">Hours</span>
-            <span class="info last">Mon to Fri: 8am to 6pm</span>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- ============================================ -->
-<!--                  Reviews                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
 
-<section id="reviews">
-    <h2 class="title">What People Say About Us</h2>
-    <div class="container">
-        <div class="review">
-            <picture>
-                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
+    <section id="reviews">
+        <h2 class="title">What People Say About Us</h2>
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
                 </picture>
                 <p>
                 So incredibly happy with our new closet! My closet guys were very professional, quick and so very helpful! They gave us their recommendations which were extremely helpful. Thank you guys for the amazing work! Will def be using you again in the future!
                 </p>
                 <div class="star-group">
-                <span class="name">Christie George<span class="desc">Homeowner</span></span>
+                    <span class="name">Christie George<span class="desc">Homeowner</span></span>
                     <picture>
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
                     </picture>
                 </div>
-        </div>
-        <div class="review">
-            <picture>
-                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile.svg" alt="profile image" width="99" height="99">
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile.svg" alt="profile image" width="99" height="99">
                 </picture>
                 <p>
                 The team at My Closet Guys are fantastic! They’re orderly and responsive to my calls, and extremely knowledgeable about the subjects I had questions about. If you need a custom organization for one of your rooms, you can’t go wrong with these guys!
                 </p>
                 <div class="star-group">
-                <span class="name">MDB<span class="desc">Company Owner</span></span>
+                    <span class="name">MDB<span class="desc">Company Owner</span></span>
                     <picture>
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
                     </picture>
                 </div>
-        </div>
-        <div class="review">
-            <picture>
-                <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
                 </picture>
                 <p>
                 I love love my closet! It can hold all my thousands of clothes and I don’t ever have to worry about it fallen. I would definitely recommend that if you are in search of a custom closet don’t hesitate to contact My Closet Guys. They are the best!
@@ -181,11 +185,11 @@ permalink: 'contact/'
                 <div class="star-group">
                     <span class="name">Chantell Duckett<span class="desc">Homeowner</span></span>
                     <picture>
-                    <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
                     </picture>
                 </div>
+            </div>
         </div>
-    </div>
-    <a class="button-solid" href="/testimonials">Read More Reviews</a>
-</section>
+        <a class="button-solid" href="/testimonials">Read More Reviews</a>
+    </section>
 {% endblock %}
