@@ -1,0 +1,399 @@
+/* STYLES FOR ABOVE THE FOLD */
+
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-1482 {
+        min-height: 100vh;
+        box-sizing: border-box;
+        background-color: var(--primary);
+	    /* 200px - 400px - leaving extra space for the navigation */
+        padding: clamp(8.5rem, 29.95vw, 17rem) (16/16rem) (80/16rem);
+        position: relative;
+        z-index: 1;
+        margin-bottom: (48/16rem);
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-2rem);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    
+        @keyframes floatAnimation2 {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-3rem);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* 48px - 140px */
+            gap: clamp(3rem, 14vw, 8.75rem);
+            position: relative;
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            max-width: (616/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cs-title {
+            /* 39px - 61px */
+            font-size: clamp(4.4375rem, 14.40vw, 8.125rem);
+            max-width: 20ch;
+            margin-bottom: (26/16rem);
+            line-height: 1em;
+            color: #fff;
+            font-family: var(--dmfont);
+            font-weight: 400;
+        }
+
+        .cs-h2 {
+            font-size: clamp(1.5rem, 6vw, 2rem);
+            color: #fff;
+            text-transform: initial;
+            line-height: 1.2em;
+        }
+
+        .cs-text {
+            /* 16px - 24px */
+            font-size: clamp(.875rem, 4.3vw, 2rem);
+            line-height: 1.5em;
+            font-weight: 300;
+            text-transform: uppercase;
+            width: 100%;
+            max-width: (660/16rem);
+            margin: 0 0 (8/16rem) 0;
+            color: #fff;
+
+            &:last-of-type {
+                margin: 0 0 (24/16rem) 0;
+            }
+        }
+
+        .cs-solid {
+            background-color: var(--secondary);
+            color: #fff;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            /* 8px - 20px */
+            gap: clamp(0.5rem, 2vw, 1.25rem);
+            position: relative;
+            z-index: 50;
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 100%;
+            box-sizing: border-box;
+            /* 24px - 80px - top and bottom*/
+            /* 12px - 60px - Left and right*/
+            padding: clamp(1.5rem, 8vw, 5rem) clamp(0.75rem, 1vw, 3.75rem);
+            background-color: #fff;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+            /* 24px - 60px */
+            border-radius: clamp(1.5rem, 4vw, 3.75rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-column: span 12;
+            position: relative;
+            z-index: 1;
+            transition: border-color 0.3s, background-color 0.3s;
+
+            a {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: clamp(1rem, 1.7vw, 1.5rem);
+            }
+        }
+
+        .cs-icon {
+            width: auto;
+            /* 48px - 60px */
+            height: clamp(3rem, 5vw, 3.75rem);
+        }
+
+        .cs-h3 {
+            font-size: (20/16rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-align: center;
+            max-width: (185/16rem);
+            margin: 0 auto;
+            color: var(--headerColor);
+        }
+
+        .cs-graphic {
+            width: 100%;
+            min-width: (150/16rem);
+            height: auto;
+            filter: grayscale(1);
+            position: absolute;
+            /* changes to 0 at large desktop */
+            bottom: (-35/16rem);
+            left: 0;
+            z-index: -1;
+            transition: filter .3s, bottom .3s;
+        }
+
+        .cs-bubbles {
+            font-size: ~"min(2.5vw, .7em)";
+            width: (419/16em);
+            height: (427/16em);
+            position: absolute;
+            /* changes to 160px at larger desktop */
+            right: (-260/16em);
+            /* changes to 30px at large desktop */
+            bottom: (-50/16em);
+            z-index: -1;
+
+            &:before {
+                /* white border bubble */
+                content: "";
+                width: (330/16em);
+                height: (330/16em);
+                background: transparent;
+                opacity: 1;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                animation-name: floatAnimation;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+            }
+
+            &:after {
+                content: "";
+                width: (260/16em);
+                height: (260/16em);
+                background: #fff;
+                opacity: 0.15;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                animation-name: floatAnimation2;
+                animation-duration: 14s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .cs-bubbles2 {
+            right: auto;
+            left: (-150/16rem);
+            bottom: auto;
+            top: 0;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero-1482 {
+        padding-bottom: 0;
+        background-color: #fff8f5;
+        position: relative;
+        z-index: 1;
+
+        &:before {
+            content: '';
+            width: 100%;
+            top: 0;
+            background: var(--primary);
+            opacity: 1;
+            position: absolute;
+            display: block;
+            bottom: (100/16rem);
+            left: 0;
+            z-index: -1;
+        }
+
+        .cs-item {
+            grid-column: span 4;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        .cs-graphic {
+            /* changes to 0 at large desktop */
+            bottom: (-25/16rem);
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-1482 {
+        display: flex;
+        align-items: stretch;
+
+        .cs-container {
+            max-width: (1440/16rem);
+            justify-content: space-between;
+            min-height: 100%;
+            margin: 0 auto;
+        }
+
+        .cs-content {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .cs-title {
+            font-size: clamp(70px, 9vw, 130px);
+            display: flex;
+            justify-content: center;
+            max-width: 100%;
+        }
+
+        .cs-card-group {
+            margin-bottom: 0;
+        }
+
+        .cs-item {
+            transition: box-shadow .3s;
+            &:hover {
+                .cs-graphic {
+                    bottom: (120/16rem) !important;
+                    filter: none;
+                }
+
+                &:before {
+                    top: 50%;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 50%;
+                background: #FFF3EC;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 100%;
+                left: 0;
+                z-index: -1;
+                transition: top .3s;
+            }
+        }
+
+        .cs-bubbles {
+            font-size: ~"min(2.5vw, 1em)";
+        }
+
+        .cs-bubbles2 {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+/* Large Desktop 1600px */
+@media only screen and (min-width: 100rem) {
+    #hero-1482 {
+        .cs-bubbles {
+            margin-left: (650/16rem);
+            right: auto;
+            bottom: (30/16rem);
+            left: 50%;
+        }
+
+        .cs-bubbles2 {
+            margin-right: (650/16rem);
+            right: 50%;
+            left: auto;
+        }
+    }
+}
+
+/* Dark Mode - 360px */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero-1482 {
+            &:before {
+                background-color: var(--dark);
+                opacity: .94;
+            }
+
+            .cs-title, .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: .8;
+            }
+
+            .cs-curve {
+                path {
+                    fill: var(--dark);
+                }
+            }
+        }
+    }
+}
+
+/* Dark Mode - 768px */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero-1482 {
+            background-color: var(--dark);
+
+            &:before {
+                background: linear-gradient(to right, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 15%,rgba(0,0,0,0.7) 23%,rgba(0,0,0,0) 100%);
+                opacity: .8;
+            }
+
+            .cs-background {
+                opacity: .2;
+            }
+        }
+    }
+}
