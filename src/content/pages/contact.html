@@ -9,6 +9,7 @@ permalink: 'contact/'
 
 {% block head %}
     <link rel="stylesheet" href="/css/contact.css"/>
+    <link rel="stylesheet" href="/css/salesforce.css"/>
 {% endblock %}
 
 {% block body %}
@@ -28,112 +29,64 @@ permalink: 'contact/'
     </section>
 
     <!-- ============================================ -->
-    <!--                    FORM                      -->
+    <!--                   Contact                    -->
     <!-- ============================================ -->
 
-    <section id="form">
-        <div class="left-section">
-            <h2 class="title">Price Match Guarantee*</h2>
-            <p>*Some restrictions applied</p>
-            <form id="contact" name="Contact Form2" method="post" data-netlify="true" data-netlify-recaptcha="true">
-                <div class="input-group">
-                    <label for="name">Full Name</label>
-                    <input id="name" aria-label="name" class="input1" name="name" placeholder="Full Name" type="text" tabindex="1" required>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input id="email" aria-label="email" class="input1 right" name="email" placeholder="Email Address" type="email" tabindex="2" required>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-
-                <div class="input-group">
-                    <label for="phone">Phone</label>
-                    <input id="phone" aria-label="phone number" class="input1" name="phone" placeholder="Phone Number" type="tel" tabindex="3" required>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-                <div class="input-group">
-                    <label for="location">Location</label>
-                    <input id="location" aria-label="location" class="input1 right" name="location" placeholder="Your Location" type="text" tabindex="4" required>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-                <div class="input-group">
-                    <label for="how">How did you hear about us</label>
-                    <input id="how" aria-label="how did you hear about us" name="hear" placeholder="How Did You Hear About Us" type="text" tabindex="5" required>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-                <div id="checks" class="input-group with100 checks">
-                    <span class="label">Select you areas of interest:</span>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet1" name="reach-in" value="yes">
-                        <label for="closet1"> Reach-in Closet</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet2" name="home-office" value="yes">
-                        <label for="closet2"> Home Office</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet3" name="laundry-area" value="yes">
-                        <label for="closet3"> Laundry Area</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet4" name="walk-in" value="yes">
-                        <label for="closet4"> Walk-in Closet</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet5" name="pantry" value="yes">
-                        <label for="closet5"> Pantry</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet6" name="garage-cabinets" value="yes">
-                        <label for="closet6"> Garage Cabinets</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet7" name="hobby-center" value="yes">
-                        <label for="closet7"> Hobby center</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="closet8" name="other" value="yes">
-                        <label for="closet8"> Other</label>
-                    </div>
-                </div>
-                <div id="select" class="input-group width100">
-                    <label for="how">Best time to call?</label>
-                    <select id="cars" name="when best to call">
-                        <option value="morning">Morning</option>
-                        <option value="afternoon">Afternoon</option>
-                        <option value="evening">Evening</option>
+    <section id="contact-2061">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Price Match Guarantee</h2>
+                <p class="cs-text">*Some restrictions applied</p>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-2061" name="Contact Form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000003TMt1" method="POST" data-netlify-recaptcha="true">
+                <input type=hidden name="oid" value="00D5e000003TMt1">
+                <input type=hidden name="retURL" value="https://myclosetguys.com/thank-you/">
+                <label class="cs-label cs-split">
+                    First Name *
+                    <input class="cs-input" maxlength="40" name="first_name" size="20" type="text" />
+                </label>
+                <label class="cs-label cs-split">
+                    Last Name *
+                    <input class="cs-input" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                </label>
+                <label class="cs-label cs-split">
+                    Email *
+                    <input class="cs-input" id="email" maxlength="80" name="email" size="20" type="text" />
+                </label>
+                <label class="cs-label cs-split">
+                    City
+                    <input class="cs-input" id="city" maxlength="40" name="city" size="20" type="text" />
+                </label>
+                <label class="cs-label cs-split">
+                    State/Province
+                    <input class="cs-input" id="state" maxlength="20" name="state" size="20" type="text" />
+                </label>
+                <label class="cs-label cs-split">
+                    Phone
+                    <input class="cs-input" id="phone" maxlength="40" name="phone" size="20" type="tel" />
+                </label>
+                <label class="cs-label">
+                    Lead Source Notes:
+                    <input class="cs-input" id="00NVH000002VR1B" maxlength="255" name="00NVH000002VR1B" size="20" type="text" />
+                </label>
+                <label class="cs-label">
+                    Best Time to Call:
+                    <select class="cs-input" id="00NVH000002VQhp" name="00NVH000002VQhp" title="Best Time to Call">
+                        <option value="">--None--</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
                     </select>
-                </div>
-                <div class="input-group textarea">
-                    <label for="message">Message</label>
-                    <textarea id="message" aria-label="write your message" name="message" placeholder="Tell us what you need help with" required></textarea>
-                    <div aria-hidden="true" class="hover-box"></div>
-                </div>
-                <div class="form-submit">
-                    <div data-netlify-recaptcha="true" style="margin-bottom: 1rem;"></div>
-                    <button name="submit" type="submit" id="contact-submit" class="button-solid" data-submit="...Sending">Submit</button>
+                </label>
+                <label class="cs-label">
+                    Project Description
+                    <textarea class="cs-textarea" id="00N5e00000dROtN" name="00N5e00000dROtN" type="text" wrap="soft"></textarea>
+                </label>
+                <div class="cs-wrapper">
+                    <button class="cs-button-solid cs-submit" type="submit">Submit</button>
                 </div>
             </form>
-        </div>
-        <div class="contact-right">
-            <div class="info-group">
-                <span class="heading">Location</span>
-                <span class="info">Waldorf, MD</span>
-            </div>
-            <div class="info-group">
-                <span class="heading">Phone</span>
-                <a class="info" href="tel:240-823-7401">(240) 823-7401</a>
-            </div>
-            <div class="info-group">
-                <span class="heading">Email</span>
-                <a class="info" href="mailto:myclosetguysllc@gmail.com">Click to Email</a>
-            </div>
-            <div class="info-group">
-                <span class="heading">Hours</span>
-                <span class="info last">Mon to Fri: 8am to 6pm</span>
-            </div>
         </div>
     </section>
 

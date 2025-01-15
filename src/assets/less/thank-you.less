@@ -11,10 +11,10 @@
         box-sizing: border-box;
         background-color: var(--primary);
 	    /* 200px - 400px - leaving extra space for the navigation */
-        padding: clamp(8.5rem, 29.95vw, 17rem) (16/16rem) (80/16rem);
+        padding: clamp(12.5rem, 29.95vw, 23rem) (16/16rem);
+        overflow: hidden;
         position: relative;
         z-index: 1;
-        margin-bottom: (48/16rem);
 
         @keyframes floatAnimation {
             0% {
@@ -68,7 +68,7 @@
 
         .cs-title {
             /* 39px - 61px */
-            font-size: clamp(4.4375rem, 14.40vw, 8.125rem);
+            font-size: clamp(3.4375rem, 14.40vw, 8.125rem);
             max-width: 20ch;
             margin-bottom: (26/16rem);
             line-height: 1em;
@@ -240,7 +240,6 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #hero-1482 {
-        padding-bottom: 0;
         background-color: #fff8f5;
         position: relative;
         z-index: 1;
@@ -253,7 +252,7 @@
             opacity: 1;
             position: absolute;
             display: block;
-            bottom: (100/16rem);
+            bottom: (0/16rem);
             left: 0;
             z-index: -1;
         }
