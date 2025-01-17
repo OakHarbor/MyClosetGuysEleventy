@@ -91,6 +91,14 @@
             border-radius: (8/16rem);
         }
 
+        .hidden {
+            height: 0;
+            overflow: hidden;
+            opacity: 0;
+            position: relative;
+            z-index: -100;
+        }
+
         .cs-select,
         .cs-date {
             /* as the select arrow/date calendar icon are not affected by padding, we can use a transparent border on the select element to pad the arrow as much as we need */
