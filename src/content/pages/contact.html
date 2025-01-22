@@ -39,7 +39,7 @@ permalink: 'contact/'
                 <p class="cs-text">*Some restrictions applied</p>
             </div>
             <!--Form-->
-            <form class="cs-form" id="cs-form-2061" name="Contact Form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000003TMt1" method="POST" netlify-honeypot="bot-field">
+            <form class="cs-form" id="cs-form-2061" name="Contact Form" data-netlify-recaptcha="true" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5e000003TMt1" method="POST" netlify-honeypot="bot-field">
                 <input type=hidden name="oid" value="00D5e000003TMt1">
                 <input type=hidden name="retURL" value="https://myclosetguys.com/thank-you/">
                 <label class="hidden cs-label">
@@ -86,6 +86,7 @@ permalink: 'contact/'
                     Project Description
                     <textarea class="cs-textarea" id="00N5e00000dROtN" name="00N5e00000dROtN" type="text" wrap="soft"></textarea>
                 </label>
+                <div data-netlify-recaptcha="true"></div>
                 <div class="cs-wrapper">
                     <button class="cs-button-solid cs-submit" type="submit">Submit</button>
                 </div>
