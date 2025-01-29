@@ -29,19 +29,48 @@ permalink: 'contact/'
     </section>
 
     <!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-2195">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Price Match Guarantee</h2>
+                <p class="cs-text">*Some restrictions applied</p>
+        </div>
+        <!--Form-->
+        <form class="cs-form" id="cs-form-2195" name="Contact Form2" method="post" action="/thank-you">
+            <label class="cs-label" aria-label="name">
+                <input class="cs-input" required type="text" id="name-2195" name="name" placeholder="Name">
+            </label>
+            <label class="cs-label cs-email" aria-label="email">
+                <input class="cs-input" required type="email" id="email-2195" name="email" placeholder="Email">
+            </label>
+            <label class="cs-label cs-phone" aria-label="phone">
+                <input class="cs-input" required type="phone" id="phone-2195" name="phone" placeholder="Phone">
+            </label>
+            <label class="cs-label" aria-label="message">
+                <textarea class="cs-input cs-textarea" required name="Message" id="message-2195" placeholder="Message"></textarea>
+            </label>
+            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+                                
+
+    <!-- ============================================ -->
     <!--                   Contact                    -->
     <!-- ============================================ -->
 
-    <section id="contact-2061">
+    <!-- <section id="contact-2061">
         <div class="cs-container">
             <div class="cs-content">
                 <h2 class="cs-title">Price Match Guarantee</h2>
                 <p class="cs-text">*Some restrictions applied</p>
             </div>
-            <!--Form-->
             <form class="cs-form" id="cs-form-2061" name="Contact Form" data-netlify-recaptcha="true" method="POST" netlify-honeypot="bot-field">
-                <!-- <input type=hidden name="oid" value="00D5e000003TMt1">
-                <input type=hidden name="retURL" value="https://myclosetguys.com/thank-you/"> -->
+                <input type=hidden name="oid" value="00D5e000003TMt1">
+                <input type=hidden name="retURL" value="https://myclosetguys.com/thank-you/">
                 <label class="hidden cs-label">
                     Don’t fill this out if you’re human: <input class="cs-input" name="bot-field" />
                 </label>
@@ -92,58 +121,6 @@ permalink: 'contact/'
                 </div>
             </form>
         </div>
-    </section>
+    </section> -->
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <h2 class="title">What People Say About Us</h2>
-        <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
-                </picture>
-                <p>
-                So incredibly happy with our new closet! My closet guys were very professional, quick and so very helpful! They gave us their recommendations which were extremely helpful. Thank you guys for the amazing work! Will def be using you again in the future!
-                </p>
-                <div class="star-group">
-                    <span class="name">Christie George<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile.svg" alt="profile image" width="99" height="99">
-                </picture>
-                <p>
-                The team at My Closet Guys are fantastic! They’re orderly and responsive to my calls, and extremely knowledgeable about the subjects I had questions about. If you need a custom organization for one of your rooms, you can’t go wrong with these guys!
-                </p>
-                <div class="star-group">
-                    <span class="name">MDB<span class="desc">Company Owner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-woman.svg" alt="profile image" width="99" height="99">
-                </picture>
-                <p>
-                I love love my closet! It can hold all my thousands of clothes and I don’t ever have to worry about it fallen. I would definitely recommend that if you are in search of a custom closet don’t hesitate to contact My Closet Guys. They are the best!
-                </p>
-                <div class="star-group">
-                    <span class="name">Chantell Duckett<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-        </div>
-        <a class="button-solid" href="/testimonials">Read More Reviews</a>
-    </section>
 {% endblock %}
