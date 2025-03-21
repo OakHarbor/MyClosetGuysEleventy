@@ -28,6 +28,7 @@
 		"@11ty/eleventy-navigation": "^0.3.5"
 	},
 	"dependencies": {
+		"@codestitchofficial/eleventy-plugin-sharp-images": "^1.0.7",
 		"del-cli": "^5.0.0",
 		"less": "^4.1.3",
 		"less-watch-compiler": "^1.16.3",

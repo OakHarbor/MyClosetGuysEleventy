@@ -1,0 +1,391 @@
+---
+title: 'Get Organized with My Closet Guys! | Waldorf, MD'
+description: "Get organized with My Closet Guys! Our professional storage designers will create a functional and stylish closet or storage unit that works for your needs."
+permalink: 'book-now/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/book-now.css"/>
+    <link rel="stylesheet" href="/css/root.css"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 600, height: 800 }) | webp %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="book-now">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Incredible Custom Closets and Storage Solutions</h1>
+            <p class="cs-text">
+                Get a free quote on custom closets, cabinets, libraries, home offices and more throughout Southern Maryland and NOVA.
+            </p>
+            <ul id="list-1405" class="cs-ul">
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-mark.svg" alt="checkmark" width="24" height="24">
+                    Free Design Consultation
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-mark.svg" alt="checkmark" width="24" height="24">
+                    Free 3D Rendering
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-mark.svg" alt="checkmark" width="24" height="24">
+                    Custom Storage Solutions For the Entire Home
+                </li>
+                <li class="cs-li">
+                    <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/check-mark.svg" alt="checkmark" width="24" height="24">
+                    World-Class Attention to Detail and Workmanship
+                </li>
+            </ul>
+            <a href="tel:240-823-7401" class="button-solid">Call Now!</a>
+        </div>
+        <div class="cs-right">
+            <span class="cs-tag">
+                Online Special
+                <span class="cs-dot" aria-hidden="true"></span>
+            </span>
+            <div class="cs-flex">
+                <h3 class="cs-h3">Price Match Guarantee</h3>
+                <p class="cs-form-text">
+                    *Some restrictions applied
+                </p>
+            </div>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1467" name="Lead Gen Form" method="post" netlify>
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1467" name="name">
+                </label>
+                <label class="cs-label">
+                    Phone
+                    <input class="cs-input" required type="tel" id="phone-1467" name="phone">
+                </label>
+                <label class="cs-label">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1467" name="email">
+                </label>
+                <label class="cs-label">
+                    City
+                    <input class="cs-input" required type="text" id="name-1467" name="City">
+                </label>
+                <label class="cs-label">
+                    State
+                    <input class="cs-input" required type="text" id="name-1467" name="State">
+                </label>
+                <label class="cs-label">
+                    Best Time to Call:
+                    <select class="cs-input" id="00NVH000002VQhp" name="time to call" title="Best Time to Call">
+                        <option value="">--None--</option>
+                        <option value="Morning">Morning</option>
+                        <option value="Afternoon">Afternoon</option>
+                        <option value="Evening">Evening</option>
+                    </select>
+                </label>
+                <label class="cs-label cs-message">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1467"></textarea>
+                </label>
+                <button class="button-solid cs-submit" type="submit">Get Estimate</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Background Image, added in CSS as a backgorund image for parallax effect -->
+    <picture class="cs-background">
+       <!--Mobile Image-->
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 600, height: 800 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 600, height: 800 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 600, height: 800 }) | jpeg %}" type="image/jpeg">
+       <!--Tablet Image-->
+       <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 1400, height: 1500 }) | avif %}" type="image/avif">
+       <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 1400, height: 1500 }) | webp %}" type="image/webp">
+       <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 1400, height: 1500 }) | jpeg %}" type="image/jpeg">
+       <!--Desktop Image-->
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 2000, height: 1200 }) | avif %}" type="image/avif">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 2000, height: 1200 }) | webp %}" type="image/webp">
+       <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 2000, height: 1200 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/portfolio/closets/port11.jpg" | resize({ width: 2000, height: 1200 }) | jpeg %}" alt="newly installed closets" width="2000" height="1000" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+                
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-355">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Clients Love My Closet Guys</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    So incredibly happy with our new closet! My closet guys were very professional, quick and so very helpful! They gave us their recommendations which were extremely helpful. Thank you guys for the amazing work! Will def be using you again in the future!
+                </p>
+                <span class="cs-name">Christie George</span>
+                <span class="cs-job">Homeowner</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    The team at My Closet Guys are fantastic! They’re orderly and responsive to my calls, and extremely knowledgeable about the subjects I had questions about. If you need a custom organization for one of your rooms, you can’t go wrong with these guys!
+                </p>
+                <span class="cs-name">MDB</span>
+                <span class="cs-job">Company Owner</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-quote" aria-hidden="true" src="/assets/images/quote-blue.svg" decoding="async" alt="quote icon" width="40" height="33">
+                <p class="cs-review">
+                    My Closet Guys is the best company out there today. They’re able to come up with a number of plans and ideas for every situation no matter how unique. In my particular case they came up with a plan that I was able to adapt to my needs.
+                </p>
+                <span class="cs-name">Joe Plaza</span>
+                <span class="cs-job">Homeowner</span>
+            </li>
+        </ul>
+        <a href="#book-now" class="button-solid">Get Free Quote</a>
+    </div>
+</section>
+              
+<!-- ============================================ -->
+<!--                  Portfolio                   -->
+<!-- ============================================ -->
+
+<section id="portfolio">
+    <h2 class="title">Our Portfolio</h2>
+    <div class="container">
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port1-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port1.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port1.jpg" alt="new hallway" width="420" height="567">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port4-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port4.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port4.jpg" alt="new home construction" width="420" height="630">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port7-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port7.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port7.jpg" alt="building a new wall" width="420" height="512">
+                </picture>
+        </div>
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port2-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port2.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port2.jpg" alt="new kitchen" width="420" height="492">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port5-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port5.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port5.jpg" alt="apartment addition" width="420" height="517">
+                </picture>
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port8-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port8.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port8.jpg" alt="kew kitchen cabinets" width="420" height="629">
+                </picture>
+        </div>
+        <div class="row">
+            <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port3-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port3.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port3.jpg" alt="new black window structure" width="420" height="625">
+                </picture>
+                
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port6-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port6.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port6.jpg" alt="kitchen rebovation" width="420" height="452">
+                </picture>
+                
+                
+                <picture>
+                <source media="(max-width: 600px)" srcset="/assets/images/port9-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/port9.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/port9.jpg" alt="bathroom renovation" width="420" height="629">
+                </picture>
+        </div>
+    </div>
+    <a href="#book-now" class="button-solid">Free Quote</a>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section class="RPsbs-2278">
+    <div class="cs-header">
+        <span class="cs-topper">Experienced</span>
+        <h2 class="cs-title">Why Choose My Closet Guys?</h2>
+        <p class="cs-text" style="margin-bottom: 0;">
+            You Can Do Better Than Pre-Fab Storage Solutions
+        </p>
+    </div>
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 656, height: 656 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 656, height: 656 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 656, height: 656 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1400, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1400, height: 720 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1400, height: 720 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1000, height: 1104 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1000, height: 1104 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1000, height: 1104 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/portfolio//garage/port5.jpg" | resize({ width: 1000, height: 1104 }) | jpeg %}" alt="garage shelving units" width="500" height="552" loading="lazy" decoding="async" aria-hidden="true">
+         </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <h3 class="cs-h3">40+ Years of Experience</h3>
+            <p class="cs-text">
+                My Closet Guys is a locally owned and operated custom storage and organization business founded by owner John Katz. We are located in Waldorf, MD, and have over 40 years of industry experience. We take pride in our attention to detail as customer satisfaction is our top priority. Our team of skilled designers have a commitment to excellence as we provide premiere customization service as your design consultant, professional organizer, and project manager.
+            </p>
+            <a class="button-solid" href="#book-now">Book Now</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section class="RPsbsr-2278">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 656, height: 656 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 656, height: 656 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 656, height: 656 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1400, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1400, height: 720 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1400, height: 720 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1044, height: 736 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1044, height: 736 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1044, height: 736 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/portfolio/offices/port20.jpg" | resize({ width: 1044, height: 736 }) | jpeg %}" alt="office storage and desk" width="522" height="368" loading="lazy" decoding="async" aria-hidden="true">
+         </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <h3 class="cs-h3">Flexible Storage Solutions</h3>
+            <p class="cs-text">
+                We listen attentively to your wants and needs for space and organization and then design a solution that will optimize your storage space, decrease clutter, and improve the look and feel of your room! Rather if you need a custom closet, mudroom, office trailer, or kitchen island built, we have the capabilities and expertise to turn your ideal space into reality.
+            </p>
+            <a class="button-solid" aria-label="learn more about our programs" href="#book-now">Book Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section class="RPsbs-2278 cs-padding">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 656, height: 656 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 656, height: 656 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 656, height: 656 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1400, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1400, height: 720 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1400, height: 720 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1044, height: 688 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1044, height: 688 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1044, height: 688 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/portfolio//offices/port26.jpg" | resize({ width: 1044, height: 688 }) | jpeg %}" alt="office desk" width="522" height="344" loading="lazy" decoding="async" aria-hidden="true">
+         </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <h3 class="cs-h3">Easy Financing</h3>
+            <p class="cs-text">
+                Apply for financing in just 60 seconds, and don’t worry about credit scores – soft credit pull is available. 0% promotional APR is available, and you can get approved in just one day. 1-12 year terms available.
+            </p>
+            <a class="button-solid" href="#book-now">Book Now</a>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+
+<section class="RPsbsr-2278">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 656, height: 656 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 656, height: 656 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 656, height: 656 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1400, height: 720 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1400, height: 720 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1400, height: 720 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1044, height: 736 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1044, height: 736 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1044, height: 736 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/portfolio/extra-spaces/port16.jpg" | resize({ width: 1044, height: 736 }) | jpeg %}" alt="custom shelving unit in a living room" width="522" height="368" loading="lazy" decoding="async" aria-hidden="true">
+         </picture>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <h3 class="cs-h3">Quality From Design to Installation</h3>
+            <p class="cs-text">
+                From the design stage to fabrication in our shop and the final installation, we pay attention to detail. The wood itself, the hardware we choose, the wall anchoring process, and measurements will be perfect. You will enjoy your custom closet or other storage solution for decades to come.
+            </p>
+            <a class="button-solid" aria-label="learn more about our programs" href="#book-now">Book Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                      CTA                     -->
+<!-- ============================================ -->
+
+<section id="cta-2236">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Schedule Your Free Design Consultation</h2>
+            <p class="cs-text">
+                Contact us, and we’ll get in touch right away. We can chat about your project on the phone, or schedule a free, no-obligation design consultation at your home in Southern Maryland and the NOVA area. We look forward to hearing from you.
+            </p>
+            <a href="#book-now" class="button-solid">Get Free Quote</a>
+        </div>
+        <div class="cs-video-wrapper">
+        <picture class="cs-video-wrapper">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 360, height: 872 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 360, height: 872 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 360, height: 872 }) | jpeg %}" type="image/jpeg">
+           <!--Tablet Image-->
+           <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 1536, height: 684 }) | avif %}" type="image/avif">
+           <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 1536, height: 684 }) | webp %}" type="image/webp">
+           <source media="(max-width: 1023px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 1536, height: 684 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 2000, height: 1000 }) | avif %}" type="image/avif">
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 2000, height: 1000 }) | webp %}" type="image/webp">
+           <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 2000, height: 1000 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/portfolio/closets/banner.jpg" | resize({ width: 2000, height: 1000 }) | jpeg %}" alt="office shelving in home" width="1720" height="547" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
+        </div>
+    </div>
+</section>
+                                   
+
+{% endblock %}
