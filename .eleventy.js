@@ -2,7 +2,10 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const { DateTime } = require('luxon');
 const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
+const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
+// configs
+const configSitemap = require("./src/config/sitemap");
 
 module.exports = function (eleventyConfig) {
 	// adds the official eleventy navigation plugin for a scalable navigation
@@ -18,13 +21,19 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('./src/admin');
 	eleventyConfig.addPassthroughCopy('./src/_redirects');
 	eleventyConfig.addPassthroughCopy({ './src/robots.txt': '/robots.txt' });
-	eleventyConfig.addPassthroughCopy({ './src/sitemap.xml': '/sitemap.xml' });
 
 	// normally, 11ty will render dates on blog posts in full JSDate format (Fri Dec 02 18:00:00 GMT-0600)
 	// this filter allows dates to be converted into a normal, locale format. view the docs to learn more (https://moment.github.io/luxon/api-docs/.html#datetime)
 	eleventyConfig.addFilter('postDate', (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
 	});
+
+	/**
+     *  AUTOMATIC SITEMAP GENERATION 
+     *  Automatically generate a sitemap, using the domain in _data/client.json
+     *  https://www.npmjs.com/package/@quasibit/eleventy-plugin-sitemap
+     */
+    eleventyConfig.addPlugin(pluginSitemap, configSitemap);
 
 	return {
 		dir: {
