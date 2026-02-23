@@ -11,7 +11,7 @@ imageAlt: Can I Build Custom Cabinets if I Have Plaster Walls?
 ---
 If you live in an older home, there’s a good chance you have plaster walls. There’s a lot to love about the character of an older home, but they can also create some unique challenges when it comes to renovations! This includes the installation of custom cabinets. You might wonder if adding custom cabinetry to your plaster-walled home is even possible, or if you’ll have to resort to floor-based options. Fortunately, building custom cabinets with plaster walls is entirely possible—you just need the right approach.
 
-If you’d like a quote or free design consultation regarding [custom cabinets in Alexandria](https://myclosetguys.com/custom-cabinets-alexandria) or elsewhere throughout NOVA and Maryland, give us a call. We’d be happy to speak with you.
+If you’d like a quote or free design consultation regarding [custom cabinets in Alexandria](https://myclosetguys.com/custom-cabinets-alexandria) or elsewhere throughout NOVA and Maryland, give us a call. We’d be happy to speak with you. 
 
 ## Understanding Plaster Walls
 
