@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
+  repo: OakHarbor/MyClosetGuysEleventy
   branch: master
+  identity_url: https://auth.decapbridge.com/sites/d1dc84bd-1fd4-41ec-b627-31ab53239214
+  gateway_url: https://gateway.decapbridge.com
 
 local_backend: true
 # change url to a link to the image you want to use, no file paths, must be a URL
