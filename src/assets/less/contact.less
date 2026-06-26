@@ -9,7 +9,7 @@
         overflow: hidden;
         position: relative;
         z-index: 1;
-        
+
         .cs-container {
             width: 100%;
             /* changes to 1280px at tablet */
@@ -97,10 +97,10 @@
 
         .cs-button-solid {
             font-size: (16/16rem);
-	    	font-weight: 700;
+            font-weight: 700;
             /* 46px - 56px */
             line-height: clamp(2.875em, 5.5vw, 3.5em);
-	        text-align: center;
+            text-align: center;
             text-decoration: none;
             width: 100%;
             margin: 0;
@@ -192,8 +192,10 @@
 
         .cs-label {
             grid-column: span 6;
+            max-width: 50%;
 
             &:last-of-type {
+                max-width: 100%;
                 grid-column: span 12;
             }
         }
@@ -263,4 +265,3 @@
         }
     }
 }
-                                
